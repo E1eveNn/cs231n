@@ -20,10 +20,13 @@ This repository provides CS231N assignment and answers (**not official**)
 
 ## Problems
 You may meet some problems as below:
+
 **1.Import Error: no module named 'past'**
+
 `pip install future`
 
 **2.ImportError: cannot import name 'imread'**
+
 imread is deprecated! imread is deprecated in SciPy 1.0.0, and will be removed in 1.2.0. Use imageio.imread instead.
 
 - *Solvement1:*
@@ -32,6 +35,7 @@ degrade scipy to 1.2.0 or less
 use `from imageio import imread` instead.
 
 **3.ImportError: cannot import name 'imresize'**
+
 imresize is deprecated! imresize is deprecated in SciPy 1.0.0, and will be removed in 1.2.0. Use skimage.transform.resize instead.
 
 - *Solvement1:*
