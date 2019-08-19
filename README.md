@@ -46,4 +46,8 @@ use `from skimage.transform import resize as imresize` instead.
 **4. Object arrays cannot be loaded when allow_pickle=False** 
 
 open file cs231n/data_utils.py, revise `f = np.load(imagenet_fn)` to `f = np.load(imagenet_fn,allow_pickle=True)` in function load_imagenet_val(num=None) , line 256.
+
+**5. TypeError: 'numpy.float64' object is not iterable**
+
+which may occur in `assignment3/StyleTransfer.ipynb`, open cs231n/image_utils.py, revise `img = imresize(img, scale_factor)` to `img = imresize(img, new_shape)` in function load_image(filename, size=None), line 90.
   
