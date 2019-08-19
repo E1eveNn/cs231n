@@ -16,7 +16,7 @@ This repository provides CS231N assignment and answers (**not official**)
 
 - [English version](http://cs231n.github.io/)
 
-- [Chinese version]()
+- [中文文档]()
 
 ## Problems
 You may meet some problems as below :
@@ -51,3 +51,6 @@ open file cs231n/data_utils.py, revise `f = np.load(imagenet_fn)` to `f = np.loa
 
 which may occur in `assignment3/StyleTransfer.ipynb`, open cs231n/image_utils.py, revise `img = imresize(img, scale_factor)` to `img = imresize(img, new_shape)` in function load_image(filename, size=None), line 90.
   
+**6. AssertionError: ** 
+
+you may encounter it in `assignment3/Generative_Adversarial_Networks_PyTorch.ipynb`, block \[7], replace `assert np.any(np_z < 0.0) and np.any(np_z > 0.0)` with `assert not np.any(np_z < 0.0) and np.any(np_z > 0.0)`
