@@ -18,6 +18,33 @@ This repository provides CS231N assignment and answers (**not official**)
 
 - [中文文档]()
 
+
+
+## Enviroments
+
+-system os: Windows 10
+
+-tensorflow: 2.0-beta1
+
+-pytorch: 1.2.0
+
+
+## Tips
+
+For the dataset needed in assignment, run `.sh` files to get dataset if you are Linux user, otherwise for Windows user, here are two tips:
+
+1. For examples, open `get_datasets.sh` file, you shall see these codes:
+```
+# Get CIFAR10
+wget http://www.cs.toronto.edu/~kriz/cifar-10-python.tar.gz
+tar -xzvf cifar-10-python.tar.gz
+rm cifar-10-python.tar.gz 
+```
+Manually copy the url `http://www.cs.toronto.edu/~kriz/cifar-10-python.tar.gz` to browser, and the browser will automatically start downloading.
+
+2. For those urls can not open in the browser, copy the link, and open Xunlei(迅雷) to create a new task, fill in this url, and Xunlei will start downloading.
+
+
 ## Problems
 You may meet some problems as below :
 
@@ -51,6 +78,6 @@ open file cs231n/data_utils.py, revise `f = np.load(imagenet_fn)` to `f = np.loa
 
 which may occur in `assignment3/StyleTransfer.ipynb`, open cs231n/image_utils.py, revise `img = imresize(img, scale_factor)` to `img = imresize(img, new_shape)` in function load_image(filename, size=None), line 90.
   
-**6. AssertionError: ** 
+**6. AssertionError:** 
 
 you may encounter it in `assignment3/Generative_Adversarial_Networks_PyTorch.ipynb`, block \[7], replace `assert np.any(np_z < 0.0) and np.any(np_z > 0.0)` with `assert not np.any(np_z < 0.0) and np.any(np_z > 0.0)`
