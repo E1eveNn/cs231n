@@ -22,11 +22,11 @@ This repository provides CS231N assignment and answers (**not official**)
 
 ## Enviroments
 
--system os: Windows 10
+- *OS: Windows 10*
 
--tensorflow: 2.0-beta1
+- *Tensorflow: 2.0-beta1*
 
--pytorch: 1.2.0
+- *Pytorch: 1.2.0*
 
 
 ## Tips
